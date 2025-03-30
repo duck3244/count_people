@@ -1,0 +1,20 @@
+# 기본 패키지
+numpy>=1.18.5
+opencv-python>=4.5.4
+matplotlib>=3.2.2
+
+# YOLOv8 관련
+ultralytics>=8.0.0
+torch>=1.7.0
+torchvision>=0.8.1
+
+# SORT 추적 알고리즘 관련
+filterpy>=1.4.5
+scikit-image>=0.17.2
+scipy>=1.4.1
+lap>=0.4.0  # 선형 할당 문제 해결용
+
+# 선택적 종속성
+pillow>=7.1.2  # 이미지 처리
+tqdm>=4.64.0   # 진행 바
+pyyaml>=5.3.1  # 설정 파일 관리
