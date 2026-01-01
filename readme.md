@@ -37,18 +37,12 @@ people-counter/
 
 ## 설치 방법
 
-1. 저장소 클론하기:
-   ```bash
-   git clone https://github.com/yourusername/people-counter.git
-   cd people-counter
-   ```
-
-2. 필요한 패키지 설치하기:
+1. 필요한 패키지 설치하기:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. YOLOv8 nano 모델 다운로드하기:
+2. YOLOv8 nano 모델 다운로드하기:
    ```bash
    mkdir -p models
    pip install ultralytics
