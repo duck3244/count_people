@@ -19,12 +19,6 @@ from __future__ import print_function
 
 import os
 import numpy as np
-import matplotlib
-
-matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-from skimage import io
 
 import glob
 import time
@@ -86,7 +80,7 @@ def convert_x_to_bbox(x, score=None):
     """
     w = np.sqrt(x[2] * x[3])
     h = x[2] / w
-    if (score == None):
+    if score is None:
         return np.array([x[0] - w / 2., x[1] - h / 2., x[0] + w / 2., x[1] + h / 2.]).reshape((1, 4))
     else:
         return np.array([x[0] - w / 2., x[1] - h / 2., x[0] + w / 2., x[1] + h / 2., score]).reshape((1, 5))
@@ -277,6 +271,13 @@ def parse_args():
 
 
 if __name__ == '__main__':
+    # 디스플레이 관련 import는 __main__ 진입 시점에만 수행
+    import matplotlib
+    matplotlib.use('TkAgg')
+    import matplotlib.pyplot as plt
+    import matplotlib.patches as patches
+    from skimage import io
+
     # all train
     args = parse_args()
     display = args.display

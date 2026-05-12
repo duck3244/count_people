@@ -1,0 +1,31 @@
+# 기본 패키지
+numpy>=1.23
+opencv-python>=4.5.4
+matplotlib>=3.5
+
+# YOLOv8 관련 (ultralytics 8.x는 최신 torch 필요)
+ultralytics>=8.0.0
+torch>=1.13
+torchvision>=0.14
+
+# SORT 추적 알고리즘 관련
+filterpy>=1.4.5
+scikit-image>=0.19
+scipy>=1.9
+# 선형 할당(lap)은 lap 또는 lapx 중 빌드 가능한 쪽 사용. 미설치 시 scipy fallback.
+lap>=0.4.0; platform_system != "Windows"
+lapx>=0.5; platform_system == "Windows"
+
+# 선택적 종속성
+pillow>=9.0   # 이미지 처리
+tqdm>=4.64.0  # 진행 바
+pyyaml>=6.0   # 설정 파일 관리
+
+# FastAPI 백엔드
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+pydantic>=2.5
+websockets>=12.0
+
+# 재현성이 중요하면 위 ">=" 를 "==" 로 핀하세요.

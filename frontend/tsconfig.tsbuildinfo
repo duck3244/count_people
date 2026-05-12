@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/api/client.ts","./src/components/Button.tsx","./src/components/CountDisplay.tsx","./src/components/Dropzone.tsx","./src/components/ProgressBar.tsx","./src/components/VideoPlayer.tsx","./src/hooks/useProgress.ts","./src/pages/Home.tsx","./src/pages/JobView.tsx","./vite.config.ts"],"version":"5.9.3"}
